@@ -6,7 +6,7 @@ from tqdm import tqdm
 import random
 import pickle
 
-IMG_SIZE = 224
+IMG_SIZE = 96
 
 DATADIR = r"D:\Github\Melanoma Hackathon\Melanoma Images\Data\train_sep"
 
@@ -69,11 +69,11 @@ imgplot = plt.imshow(X[0])
 
 import pickle
 
-pickle_out = open("Xtrain.pickle","wb")
+pickle_out = open(r"D:\Github\Melanoma Hackathon\Xtrain.pickle","wb")
 pickle.dump(X, pickle_out)
 pickle_out.close()
 
-pickle_out = open("ytrain.pickle","wb")
+pickle_out = open(r"D:\Github\Melanoma Hackathon\ytrain.pickle","wb")
 pickle.dump(y, pickle_out)
 pickle_out.close()
 
@@ -133,11 +133,11 @@ imgplot = plt.imshow(X[0])
 
 import pickle
 
-pickle_out = open("Xval.pickle","wb")
+pickle_out = open(r"D:\Github\Melanoma Hackathon\Xval.pickle","wb")
 pickle.dump(X, pickle_out)
 pickle_out.close()
 
-pickle_out = open("yval.pickle","wb")
+pickle_out = open(r"D:\Github\Melanoma Hackathon\yval.pickle","wb")
 pickle.dump(y, pickle_out)
 pickle_out.close()
 
@@ -196,11 +196,11 @@ imgplot = plt.imshow(X[0])
 
 import pickle
 
-pickle_out = open("Xtest.pickle","wb")
+pickle_out = open(r"D:\Github\Melanoma Hackathon\Xtest.pickle","wb")
 pickle.dump(X, pickle_out)
 pickle_out.close()
 
-pickle_out = open("ytest.pickle","wb")
+pickle_out = open(r"D:\Github\Melanoma Hackathon\ytest.pickle","wb")
 pickle.dump(y, pickle_out)
 pickle_out.close()
 
